@@ -1,2 +1,2 @@
 # git-intro
-Quick Introduction to GitHub
+Quick Introduction to [GitHub](https://github.com/)
