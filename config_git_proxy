@@ -1,0 +1,63 @@
+  ProxyCommand corkscrew proxy.uonbi.ac.ke 80 %h %p /home/Rowland/.ssh/.auth
+
+
+  #General
+  Host *
+
+  User git
+
+  Port 22
+
+  #IdentityFile /home/Rowland/.ssh/id_dsa
+
+  IdentitiesOnly yes
+
+  TCPKeepAlive yes
+
+
+#Github_Default
+  Host github.com
+
+  User git
+
+  Port 443
+
+  Hostname ssh.github.com
+
+  IdentityFile /home/Rowland/.ssh/id_dsa
+
+  IdentitiesOnly yes
+
+  TCPKeepAlive yes
+
+
+  #Github_Work
+  Host github-work
+
+  User git
+
+  Port 443
+
+  Hostname ssh.github.com
+
+  IdentityFile /home/Rowland/.ssh/id_rsa_work
+
+  IdentitiesOnly yes
+
+  TCPKeepAlive yes
+
+
+  #Heroku-Default
+  Host heroku.com
+
+  User git
+
+  Port 443
+
+  Hostname ssh.heroku.com
+
+  IdentityFile /home/Rowland/.ssh/id_dsa
+
+  IdentitiesOnly yes
+
+  TCPKeepAlive yes
